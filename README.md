@@ -1,5 +1,5 @@
 # Comparing Statistical Approaches for Network Inference in Noisy Biological Time-Series Data
-**Full project write-up:** [View PDF](portfolio_writeup.pdf)
+**Full project write-up:** [View PDF](project_writeup.pdf)
 
 ## Overview
 This project evaluates how different statistical modeling assumptions affect gene regulatory network inference when working with short, noisy biological time-series data. Rather than optimizing a single predictive model, the focus is on comparing inference strategies and understanding the limits of what conclusions can be supported under realistic experimental constraints.
