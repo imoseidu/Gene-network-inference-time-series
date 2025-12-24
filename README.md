@@ -8,6 +8,7 @@ This project evaluates how different statistical modeling assumptions affect gen
 Gene regulatory network inference is often used for hypothesis generation rather than definitive conclusions. In practice, biological experiments frequently produce short and noisy time-series datasets due to cost, experimental complexity, or biological limitations. This raises an important analytical question: **how much does model choice matter when data quality and quantity are constrained?**
 
 ## Data
+
 - Time-series gene expression data sampled every 10 minutes  
 - 5 genes with a short observation window  
 - A small reference regulatory network used for evaluation  
@@ -46,6 +47,11 @@ Instead of tuning a single model for performance, I compared two common statisti
 | VAR(1) Lasso | ~0.58 |
 
 ## Results & Insights
+
+<img width="589" height="490" alt="image" src="https://github.com/user-attachments/assets/4efd4a3b-715e-4770-8883-0b82d985628c" />
+<img width="589" height="490" alt="image" src="https://github.com/user-attachments/assets/54b95b8a-d5ec-4c3d-97d3-a3cd12cbff61" />
+
+
 - The VAR(1) model consistently outperformed the Gaussian Graphical Model, suggesting that incorporating temporal structure improves recovery of directed interactions.
 - However, overall performance remained limited due to:
   - Small network size  
@@ -57,7 +63,7 @@ Instead of tuning a single model for performance, I compared two common statisti
 In short, incorporating temporal structure can modestly improve network inference under constrained conditions, but inferred networks should be treated as hypothesis-generating tools rather than definitive representations of regulatory relationships. Careful interpretation is essential when working with small, noisy time-series data.
 
 ## Tools
-Python, NumPy, SciPy, pandas, scikit-learn, matplotlib
+Python, NumPy, SciPy, pandas, scikit-learn, matplotlib, sklearn
 
 ## How to Run
 ```bash
