@@ -1,5 +1,6 @@
 # Comparing Statistical Approaches for Network Inference in Noisy Biological Time-Series Data
 **Author:** Imose Iduozee
+
 **Full project write-up:** [View PDF](project_writeup.pdf)
 
 ## Overview
